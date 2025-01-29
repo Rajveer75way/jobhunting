@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { createStyles } from "@mui/styles";
 import Header from "../components/Header"; // Import your header component
 import Footer from "../components/Footer"; // Import your footer component
+import Navbar from "../components/Navbar"; // Import your navbar component
 
 const useStyle = () => createStyles({
   root: {
@@ -27,9 +28,10 @@ const Basic = () => {
 
   return (
     <Box sx={styles.root}>
+      <Navbar />
       {/* Header Section */}
       <Box sx={styles.header}>
-        <Header />
+        {/* <Header /> */}
       </Box>
 
       {/* Main Content Area */}
